@@ -1,0 +1,103 @@
+/*General aspects*/
+*, *::before, *::after {margin:0;padding:0;box-sizing:border-box;font-family: 'Kumbh Sans', sans-serif;}
+
+img {max-width:100%;}
+
+body {height:100vh;
+background-image: url(../img/bg-pattern-desktop.svg);
+}
+
+h1 {font-weight:900;}
+
+hr {color:hsl(240, 5%, 91%);}
+
+/*Trying the gradient*/
+body {
+    background-color: #b168e9;
+background-image: linear-gradient(160deg, #b168e9 0%, #6464e8 100%);
+display:flex;
+flex-direction:column;
+place-items:center;
+place-content:center;
+}
+
+
+
+
+
+/*MAGIC OF THE CHECKBOX*/
+
+input[type="checkbox"] {visibility: hidden;}
+
+p {display:none;color:hsl(240, 6%, 50%);}
+
+
+input:checked ~ .toggledP {
+    display:block;
+    width:20vw;
+    font-weight: 400;
+    font-size:0.8rem;
+    padding:0.2rem 1rem;
+}
+
+input:checked ~ .toggleImg {transform: rotate(180deg);}
+
+
+
+
+/*Grid principal de la box partida en dos*/
+#mainCard {display:grid;
+grid-template-columns: 5fr 7fr;
+min-width: 40vw;
+width: 60vw;
+max-width: 90vw;
+min-height:60vh;
+height: fit-content;
+border-radius: 1vw;
+place-content:center;
+place-items:center;
+background-color: #fff;overflow:hidden;}
+
+/*article detalles*/
+
+article {padding: 1rem;margin: 1rem; display:flex;flex-direction: column;
+place-content:center; text-align:justify;}
+
+
+
+
+
+
+/*Position*/
+.relative {position:relative;}
+.absolute {position:absolute;}
+.relativeill {position:relative;}
+#illdesk {
+    right: 2vw;
+}
+
+#box {
+    top:14vh;right:18vw;
+    width:8rem;
+}
+
+
+
+/*Footer; no changes*/
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+/*Media Queries*/
+@media screen and (max-width:400px) {
+    .desktop {display:none;}
+}
+
+@media screen and (min-width:400px) {
+    .mobile {display:none;}
+}
