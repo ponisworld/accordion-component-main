@@ -25,9 +25,9 @@ place-content:center;
 
 
 
-/*MAGIC OF THE CHECKBOX*/
+/*MAGIC OF THE radio*/
 
-input[type="checkbox"] {visibility: hidden;}
+input[type="radio"] {visibility: hidden;}
 
 p {display:none;color:hsl(240, 6%, 50%);}
 
