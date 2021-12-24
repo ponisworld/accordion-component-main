@@ -1,4 +1,4 @@
-# Hi!!! I'm Andrea Bellver. 
+# Hi!!! Thank u for seeing my webpage.
 
 I've struggled with this challenge because I wanted to do it by using only HTML and CSS, but there are things that are so difficult for me to understand without JavaScript.
 
